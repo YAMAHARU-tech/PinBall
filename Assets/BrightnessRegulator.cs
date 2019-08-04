@@ -57,11 +57,12 @@ public class BrightnessRegulator : MonoBehaviour
             this.degree -= this.speed;
         }
 
-        //衝突時に呼ばれる関数
-        void OnCollisionEnter(Collision other)
-        {
-            //角度を180に設定
-            this.degree = 180;
-        }
+        
+    }
+    //衝突時に呼ばれる関数
+    void OnCollisionEnter(Collision other)
+    {
+        //角度を180に設定
+        this.degree = 180;
     }
 }
